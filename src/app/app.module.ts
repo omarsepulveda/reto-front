@@ -5,7 +5,6 @@ import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoadFileComponent } from './load-file/load-file.component';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { OfferComponent } from './offer/offer.component';
 import { CharacteristicsComponent } from './characteristics/characteristics.component';
@@ -16,7 +15,6 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
-    LoadFileComponent,
     OfferComponent,
     CharacteristicsComponent,
     PricesComponent,

@@ -6,22 +6,22 @@
                 Oferta 1
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" *ngFor="let item of appService.ofertas">
+                <a class="dropdown-item" *ngFor="let item of appService.ofertas" (click)="offerSelected = item">
                     {{ item.id }}
                 </a>
             </div>
         </div>
         <div class="col-6">
             <div class="row">
-                <div class="col-2">
-                    <label for="ID Oferta">ID Oferta: </label>
+                <div class="col-3">
+                    <label for="ID Oferta">ID Oferta:</label>
                 </div>
-                <div class="col-10">AQUI VA ID OFERTA</div>
+                <div class="col-9"> {{ offerSelected?.id }}</div>
                 <div class="col-2">
-                    <label for="Nombre">Nombre:</label>
+                    <label for="Nombre">Nombre: </label>
                 </div>
                 <div class="col-10">
-                    <div class="col-10">AQUI VA NOMBRE</div>
+                    <div class="col-10"> {{ offerSelected?.name }}</div>
                 </div>
             </div>
         </div>

@@ -8,11 +8,14 @@ import { AppService } from '../app.service';
 })
 export class OfferComponent implements OnInit {
 
+  offerSelected: any;
+
   constructor(
     public appService: AppService
   ) { }
 
   ngOnInit() {
+    this.appService.getOffers();
   }
 
 }
