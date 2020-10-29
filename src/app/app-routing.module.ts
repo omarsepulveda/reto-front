@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoadFileComponent } from './load-file/load-file.component';
 import { OfferComponent } from './offer/offer.component';
 
 
