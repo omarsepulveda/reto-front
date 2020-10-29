@@ -1,13 +1,12 @@
 <div class="container">
     <div class="row">
- {{       appService.data | json }}
         <div class="dropdown col-6">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Oferta 1
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" *ngFor="let item of appService.data[0].versions[0].characteristics[0].versions">
+                <a class="dropdown-item" *ngFor="let item of appService.ofertas">
                     {{ item.id }}
                 </a>
             </div>
